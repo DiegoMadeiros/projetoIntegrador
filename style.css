@@ -5,7 +5,7 @@
     text-decoration: none;
     font-weight: unset;
     user-select: none;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
 
 }
@@ -104,6 +104,9 @@ section {
     height: 100vh;
     color:rgb(12, 14, 12);
     font-weight: bold;
+    text-overflow: ellipsis;
+    text-shadow: rgb(153, 152, 152) 5px 5px 7px;
+    z-index: 2
     
 }
 
@@ -120,9 +123,18 @@ section h2{
 
 section h5{
     margin-top: 15px;
+    font-size: 15px;
+    position: relative;
+    z-index: 100;
     margin-left: 30px;
-    margin-right: 15px;
+    margin-right: 35px;
     text-align: justify;
+    line-height: 30px;
+    
+
+    
+    
+ 
 
     
 }
@@ -130,23 +142,99 @@ section h5{
 section #img-text{
     background-image: url(https://i.pinimg.com/originals/5e/13/d0/5e13d0440c3ca58b5166eb94eb0a4282.png);
     background-size: cover;
+    margin-bottom: 100px;
     width: 100vw;
     height: 100vh;
     float:right;
+    
 }
 
+nav .img-baixo{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
 
+}
+nav .img-baixo p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* .img-baixo img{
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+    
+}
+.img-1{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-around;
+    
+} */
+
+/* nav .img-1 h5{
+    flex-direction:column;
+    text-align: end;
+    color: #009DAC;
+    
+} */
+
+
+@media screen {
+    section h5{
+        background: transparent;
+        font-weight: bold;
+        
+        
+    }
+}
 
 @media(max-width: 500px){
     .menu{
         flex-direction: column;
         width: 100%;
+        font-size: 10px;
     }
+    .nav-menu{
+        flex-direction: column;
+        width: 100%;
+        font-size: 10px;
+    }
+    .subtitulo{
+        flex-direction: column;
+        width: 100%;
+        font-size: 20px;
+    }
+    .titulo{
+        flex-direction: column;
+        width: 100%;
+        font-size: 20px;
+    }
+    .login-link{
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        font-size: 10px;
+    }
+    
 
 }
 
-@media(max-width: 400px){
+@media(mix-width: 400px){
     .menu{
+        font-size: 10px;
+    }
+    .nav-menu{
+        font-size: 10px;
+    }
+    .subtitulo{
+        font-size: 10px;
+    }
+    .titulo{
+        font-size: 10px;
+    }
+    .login-link{
         font-size: 10px;
     }
 
