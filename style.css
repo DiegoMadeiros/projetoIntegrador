@@ -141,7 +141,7 @@ section h5{
     
 }
 
-section #img-text{
+/*section #img-text{
     background-image: url(https://i.pinimg.com/originals/5e/13/d0/5e13d0440c3ca58b5166eb94eb0a4282.png);
     background-size: cover;
     margin-bottom: 50px;
@@ -149,7 +149,7 @@ section #img-text{
     height: 100vh;
     float:right;
     
-}
+}*/
 
 nav .img-baixo{
     display: flex;
